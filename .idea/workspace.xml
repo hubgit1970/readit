@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0113fc1-070f-415b-b39a-497a9661b6f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -332,7 +333,7 @@
       <updated>1566530152151</updated>
       <workItem from="1566530153233" duration="35822000" />
       <workItem from="1566613964480" duration="2288000" />
-      <workItem from="1566616277574" duration="7426000" />
+      <workItem from="1566616277574" duration="7936000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Django and created books app">
       <created>1566531678368</created>
@@ -481,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566624347909</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add list_authors method and overwrite save method on Book object">
+      <created>1566624727417</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1566624727417</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +531,8 @@
     <MESSAGE value="Add custom form validation enforcing that each new book is unique" />
     <MESSAGE value="register Book in admin and improve Book model" />
     <MESSAGE value="Add new Author model, create relationship between Book and Author" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new Author model, create relationship between Book and Author" />
+    <MESSAGE value="Add list_authors method and overwrite save method on Book object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add list_authors method and overwrite save method on Book object" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/readit$Test__readit.coverage" NAME="Test: readit Coverage Results" MODIFIED="1566546478446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
