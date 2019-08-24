@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0113fc1-070f-415b-b39a-497a9661b6f9" name="Default Changelist" comment="Add new Author model, create relationship between Book and Author">
-      <change afterPath="$PROJECT_DIR$/books/migrations/0003_auto_20190824_0521.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/admin.py" afterDir="false" />
+    <list default="true" id="c0113fc1-070f-415b-b39a-497a9661b6f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -335,7 +332,7 @@
       <updated>1566530152151</updated>
       <workItem from="1566530153233" duration="35822000" />
       <workItem from="1566613964480" duration="2288000" />
-      <workItem from="1566616277574" duration="7144000" />
+      <workItem from="1566616277574" duration="7426000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Django and created books app">
       <created>1566531678368</created>
@@ -477,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566623901884</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add new Author model, create relationship between Book and Author">
+      <created>1566624347909</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1566624347909</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
