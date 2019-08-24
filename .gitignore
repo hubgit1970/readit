@@ -61,8 +61,6 @@ Session.vim
 __pycache__/
 *.py[cod]
 
-# C extensions
-*.so
 
 # Distribution / packaging
 bin/
@@ -103,5 +101,7 @@ coverage.xml
 .ropeproject
 
 # Django stuff:
-*.log
 *.pot
+
+# PyCharm fields
+*.xml
