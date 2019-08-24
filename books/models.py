@@ -5,7 +5,6 @@ from django.utils.timezone import now
 
 # Create your models here.
 
-
 class Book(models.Model):
     title = models.CharField(max_length=150)
     authors = models.ManyToManyField('Author', related_name='books')

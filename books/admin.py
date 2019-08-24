@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Author, Book
 
 
+@admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     fieldsets = [
         ("Book Details", {"fields": ["title", "authors"]}),
@@ -25,4 +26,3 @@ class BookAdmin(admin.ModelAdmin):
 # Register your models here.
 
 admin.site.register(Author)
-admin.site.register(Book, BookAdmin)
