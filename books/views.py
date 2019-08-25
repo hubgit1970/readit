@@ -1,29 +1,26 @@
+from django.core.urlresolvers import reverse
 from django.db.models import Count
-from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import DetailView, View
 from django.views.generic.edit import CreateView
-
 from .forms import BookForm, ReviewForm
 from .models import Author, Book
 
 
 # Create your views here.
-
-
 def list_books(request):
     """
     List the books that have reviews
-    :param request:
-    :return: render (request, template, context)
     """
+
     books = Book.objects.exclude(date_reviewed__isnull=True).prefetch_related('authors')
 
     context = {
         'books': books,
     }
 
-    return render(request, 'list.html', context)
+    return render(request, "list.html", context)
 
 
 class AuthorList(View):
@@ -38,7 +35,7 @@ class AuthorList(View):
             'authors': authors,
         }
 
-        return render(request, 'authors.html', context)
+        return render(request, "authors.html", context)
 
 
 class BookDetail(DetailView):
@@ -61,7 +58,7 @@ class ReviewList(View):
 
         context = {
             'books': books,
-            'form': BookForm,
+            'form':  BookForm,
         }
 
         return render(request, "list-to-review.html", context)
@@ -82,28 +79,10 @@ class ReviewList(View):
         return render(request, "list-to-review.html", context)
 
 
-def review_books(request):
-    """
-    List all of the books that we want to review
-    :param request:
-    :return:
-    """
-    books = Book.objects.filter(date_reviewed__isnull=True).prefetch_related('authors')
-
-    context = {
-        'books': books,
-    }
-
-    return render(request, 'list-to-review.html', context)
-
-
-# @login_required
+@login_required
 def review_book(request, pk):
     """
     Review an individual book
-    :param request:
-    :param pk:
-    :return:
     """
     book = get_object_or_404(Book, pk=pk)
 
@@ -127,7 +106,7 @@ def review_book(request, pk):
         'form': form,
     }
 
-    return render(request, 'review-book.html', context)
+    return render(request, "review-book.html", context)
 
 
 class CreateAuthor(CreateView):
