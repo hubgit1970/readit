@@ -1,14 +1,16 @@
 import factory
-from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
-from .models import Author, Book
+from django.contrib.auth.models import User
 from django.utils.timezone import now
+
+from .models import Author, Book
 
 
 class AuthorFactory(factory.django.DjangoModelFactory):
     """
     Creates an Author
     """
+
     class Meta:
         model = Author
 
@@ -19,6 +21,7 @@ class UserFactory(factory.django.DjangoModelFactory):
     """
     Creates a standard user
     """
+
     class Meta:
         model = User
 
@@ -28,7 +31,7 @@ class UserFactory(factory.django.DjangoModelFactory):
     password = make_password('test')
 
 
-class BookFactory(factory.django.DjangoModelfactory):
+class BookFactory(factory.django.DjangoModelFactory):
     """
     Creates a book without a review
     """
@@ -55,5 +58,3 @@ class ReviewFactory(BookFactory):
     review = factory.Faker('text', max_nb_chars=400)
     date_reviewed = now()
     reviewed_by = factory.SubFactory(UserFactory)
-
-
