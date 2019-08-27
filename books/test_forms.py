@@ -37,7 +37,6 @@ class BookFormTest(TestCase):
         self.assertFalse(form.is_valid())
         self.assertTrue(form.has_error(NON_FIELD_ERRORS, code='bookexists'))
 
-
     def test_custom_validation_accepts_new_book(self):
         new_author = AuthorFactory()
         form = BookForm(data={
