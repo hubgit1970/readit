@@ -1,0 +1,4 @@
+-r base.txt
+django-debug-toolbar==2.0
+Faker==2.0.1
+sqlparse==0.3.0

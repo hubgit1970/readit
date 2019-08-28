@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0113fc1-070f-415b-b39a-497a9661b6f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chrismulraney.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chrismulraney.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/readit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/readit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/test_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +64,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="readit" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="readit" />
+      </console-settings>
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -213,6 +224,9 @@
       <module name="readit" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/books/tests" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -389,6 +403,16 @@
       <workItem from="1566530153233" duration="35822000" />
       <workItem from="1566613964480" duration="2288000" />
       <workItem from="1566616277574" duration="48197000" />
+      <workItem from="1567003029811" duration="130000" />
+      <workItem from="1567003181541" duration="645000" />
+      <workItem from="1567003875870" duration="211000" />
+      <workItem from="1567005380442" duration="210000" />
+      <workItem from="1567005680595" duration="385000" />
+      <workItem from="1567006430263" duration="521000" />
+      <workItem from="1567007306737" duration="391000" />
+      <workItem from="1567007872913" duration="70000" />
+      <workItem from="1567008004155" duration="420000" />
+      <workItem from="1567008856045" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Django and created books app">
       <created>1566531678368</created>
