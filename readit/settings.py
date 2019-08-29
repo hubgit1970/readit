@@ -28,7 +28,12 @@ if DJANGO_MODE == 'local':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+if os.getenv('DJANGO_MODE') is None:
+    ALLOWED_HOSTS = ['127.0.0.1']
+
+else:
+    ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+
 
 INTERNAL_IPS = [
     # ...
