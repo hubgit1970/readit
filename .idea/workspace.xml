@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0113fc1-070f-415b-b39a-497a9661b6f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/readit/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readit/runtime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readit/uwsgi.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements/production.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/chrismulraney.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/chrismulraney.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readit/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readit/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/readit/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django tests.Test: books.tests.tests">
+  <component name="RunManager" selected="Django tests.Test: readit">
     <configuration name="Test: books.templates" type="DjangoTestsConfigurationType" temporary="true">
       <module name="readit_prev" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -407,7 +415,7 @@
       <workItem from="1567007306737" duration="391000" />
       <workItem from="1567007872913" duration="70000" />
       <workItem from="1567008004155" duration="420000" />
-      <workItem from="1567008856045" duration="10439000" />
+      <workItem from="1567008856045" duration="13073000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Django and created books app">
       <created>1566531678368</created>
