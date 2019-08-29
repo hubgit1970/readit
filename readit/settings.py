@@ -34,7 +34,6 @@ if os.getenv('DJANGO_MODE') is None:
 else:
     ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
-
 INTERNAL_IPS = [
     # ...
     '127.0.0.1',
@@ -110,18 +109,19 @@ if DJANGO_MODE == 'local':
 elif DJANGO_MODE == 'staging':
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
+            'ENGINE':   'django.db.backends.postgresql_psycopg2',
+            'NAME':     os.getenv('DB_NAME'),
+            'USER':     os.getenv('DB_USER'),
             'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-            'PORT': os.getenv('DB_PORT', 5432),
+            'HOST':     os.getenv('DB_HOST', '127.0.0.1'),
+            'PORT':     os.getenv('DB_PORT', 5432),
 
         }
     }
 
 elif DJANGO_MODE == 'production':
     import dj_database_url
+
     # handles DATABASE_URL environment variable
     DATABASES = {'default': dj_database_url.config()}
 
@@ -167,3 +167,46 @@ STATICFILES_DIRS = (
 
 # Auth
 LOGIN_URL = '/login/'
+
+# LOGGING
+# See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
+# A sample logging configuration. The only tangible logging
+# performed by this configuration is to send an email to
+# the site admins on every HTTP 500 error when DEBUG=False.
+# See http://docs.djangoproject.com/en/dev/topics/logging for
+# more details on how to customize your logging configuration.
+
+LOGGING = {
+    'version':                  1,
+    'disable_existing_loggers': False,
+    'filters':                  {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'handlers':                 {
+        'mail_admins': {
+            'level':   'ERROR',
+            'filters': ['require_debug_false'],
+            'class':   'django.utils.log.AdminEmailHandler'
+        }
+    },
+    'loggers':                  {
+        'django.request': {
+            'handlers':  ['mail_admins'],
+            'level':     'ERROR',
+            'propagate': True,
+        },
+    }
+}
+# Admins
+ADMINS = {
+    ('Chris M', 'searchlumin70@gmail.com'),
+}
+
+if DJANGO_MODE == 'production':
+    EMAIL_HOST = 'smtp.sengrid.net',
+    EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME'),
+    EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD')
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
